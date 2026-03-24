@@ -1,0 +1,13 @@
+# Dotfiles package list
+# Regular packages are installed via pacman.
+# AUR packages are prefixed with "aur:" and installed via yay.
+#
+# Manage with: scripts/pkg.sh [generate|install|check]
+
+grim
+slurp
+wl-clipboard
+libnotify
+jq
+
+aur:hyprpicker

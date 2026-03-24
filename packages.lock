@@ -1,0 +1,35 @@
+{
+  "generated": "2026-03-24T19:03:52Z",
+  "packages": [
+    {
+      "name": "grim",
+      "version": "1.5.0-2",
+      "source": "pacman"
+    },
+    {
+      "name": "slurp",
+      "version": "1.5.0-1",
+      "source": "pacman"
+    },
+    {
+      "name": "wl-clipboard",
+      "version": "1:2.2.1-3",
+      "source": "pacman"
+    },
+    {
+      "name": "libnotify",
+      "version": "0.8.8-1",
+      "source": "pacman"
+    },
+    {
+      "name": "jq",
+      "version": "1.8.1-1",
+      "source": "pacman"
+    },
+    {
+      "name": "hyprpicker",
+      "version": "0.4.6-2",
+      "source": "aur"
+    }
+  ]
+}
