@@ -9,5 +9,6 @@ slurp
 wl-clipboard
 libnotify
 jq
+eza
 
 aur:hyprpicker
