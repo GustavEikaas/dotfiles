@@ -2,9 +2,9 @@ My arch hyprland dotfiles
 
 ## First-time setup
 
-1. **Install `jq` and `git`** (the only bootstrap dependencies):
+1. **Install `git`** so you can clone the repo:
    ```bash
-   sudo pacman -S --needed git jq
+   sudo pacman -S --needed git
    ```
 
 2. **Clone the repo** and place it wherever you like:
@@ -13,14 +13,31 @@ My arch hyprland dotfiles
    cd ~/dotfiles
    ```
 
-3. **Install all declared packages**:
+3. **Run the install wizard**:
    ```bash
-   scripts/pkg.sh install
+   ./install.sh
    ```
-   This installs pacman packages with `sudo pacman -S --needed` and AUR packages with `yay`.
-   `yay` itself must be installed separately if you don't have it yet — see the [yay install guide](https://github.com/Jguer/yay#installation).
+   The wizard will:
+   - offer to install missing bootstrap packages like `jq`
+   - run `scripts/pkg.sh install` for the packages declared in `packages.txt`
+   - symlink `bashrc/` to `~/.config/bashrc`
+   - ensure `~/.bashrc` sources `~/.config/bashrc/bashrc`
 
-4. **Symlink or copy config files** into place (manually for now, until a stow/symlink script is added).
+   If `packages.txt` includes AUR packages, `yay` must already be installed or the package-install step will fail. See the [yay install guide](https://github.com/Jguer/yay#installation).
+
+4. **Reload your shell**:
+   ```bash
+   source ~/.bashrc
+   ```
+
+If you prefer to do the Bash setup manually, use:
+
+```bash
+ln -sfn ~/dotfiles/bashrc ~/.config/bashrc
+printf '\nsource ~/.config/bashrc/bashrc\n' >> ~/.bashrc
+```
+
+Bash will not automatically source `~/.config/bashrc` just because the directory exists or is symlinked there. One of Bash's normal startup files, such as `~/.bashrc`, must explicitly source `~/.config/bashrc/bashrc`.
 
 ## Package management
 
