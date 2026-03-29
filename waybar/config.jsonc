@@ -1,0 +1,37 @@
+{
+  "layer": "top",
+  "output": [ "*" ],
+  "position": "top",
+  "mod": "dock",
+  "height": 33,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload_style_on_change": true,
+  "include": [
+    "~/.config/waybar/modules/*.jsonc"
+  ],
+
+  "modules-left": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
+  "modules-center": ["custom/padd","custom/l_end","tray","clock","custom/r_end","custom/padd"],
+  "modules-right": ["custom/padd","custom/l_end","wlr/taskbar","network","custom/r_end","custom/padd"],
+
+
+  "custom/l_end": {
+      "format": " ",
+      "interval": "once",
+      "tooltip": false
+  },
+
+  "custom/r_end": {
+      "format": " ",
+      "interval": "once",
+      "tooltip": false
+  },
+
+  "custom/padd": {
+      "format": "  ",
+      "interval": "once",
+      "tooltip": false
+  }
+}

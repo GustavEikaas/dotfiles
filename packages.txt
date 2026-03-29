@@ -9,5 +9,7 @@ slurp
 wl-clipboard
 libnotify
 jq
+hyprpaper
+rofi-wayland
 
 aur:hyprpicker
