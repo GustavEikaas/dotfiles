@@ -12,8 +12,9 @@ jq
 eza
 blueman
 hyprpaper
+hyprlock
 rofi-wayland
 pavucontrol
-hyprlock
+fprintd
 
 aur:hyprpicker
