@@ -1,0 +1,7 @@
+{
+  "custom/exit": {
+    "format": "",
+    "on-click": "hyprlock",
+    "tooltip-format": "Lock PC"
+  }
+}

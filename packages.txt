@@ -10,5 +10,10 @@ wl-clipboard
 libnotify
 jq
 eza
+blueman
+hyprpaper
+rofi-wayland
+pavucontrol
+hyprlock
 
 aur:hyprpicker
