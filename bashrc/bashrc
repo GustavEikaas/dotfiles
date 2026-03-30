@@ -1,0 +1,27 @@
+_bashrc_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+_bashrc_source_dir() {
+  local dir="$1"
+  local file
+
+  [[ -d "$dir" ]] || return 0
+
+  for file in "$dir"/*.bash; do
+    [[ -e "$file" ]] || continue
+    . "$file"
+  done
+}
+
+_bashrc_source_dir "$_bashrc_dir/env.d"
+
+case "$-" in
+  *i*)
+    _bashrc_source_dir "$_bashrc_dir/functions"
+    _bashrc_source_dir "$_bashrc_dir/aliases"
+    _bashrc_source_dir "$_bashrc_dir/interactive.d"
+    _bashrc_source_dir "$_bashrc_dir/readline.d"
+    ;;
+esac
+
+unset -f _bashrc_source_dir
+unset _bashrc_dir

@@ -1,0 +1,5 @@
+alias shutdown='systemctl poweroff'
+alias screenshot='~/.config/scripts/screenshot.sh'
+alias lock='hyprlock'
+alias kben='hyprctl keyword input:kb_layout us'
+alias kbno='hyprctl keyword input:kb_layout no'

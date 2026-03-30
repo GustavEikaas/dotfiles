@@ -9,6 +9,7 @@ slurp
 wl-clipboard
 libnotify
 jq
+eza
 blueman
 hyprpaper
 rofi-wayland
