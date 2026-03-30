@@ -1,0 +1,9 @@
+{
+  "custom/docker": {
+    "exec": "~/.config/waybar/scripts/docker.sh",
+    "return-type": "json",
+    "interval": 5,
+    "on-click": "kitty --hold -e docker ps",
+    "hide-empty-text": true
+  }
+}

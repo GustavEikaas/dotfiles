@@ -9,7 +9,10 @@ slurp
 wl-clipboard
 libnotify
 jq
+blueman
 hyprpaper
 rofi-wayland
+pavucontrol
+hyprlock
 
 aur:hyprpicker

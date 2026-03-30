@@ -1,0 +1,9 @@
+{
+  "custom/keyboard": {
+    "exec": "~/.config/waybar/scripts/kb-layout.sh",
+    "return-type": "json",
+    "interval": 5,
+    "signal": 1,
+    "tooltip": false
+  }
+}
