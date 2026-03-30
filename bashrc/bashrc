@@ -1,4 +1,4 @@
-_bashrc_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+_bashrc_dir="$HOME/.config/bashrc"
 
 _bashrc_source_dir() {
   local dir="$1"

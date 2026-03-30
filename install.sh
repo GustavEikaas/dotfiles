@@ -35,6 +35,7 @@ symlink "$DOTFILES/rofi"      "$HOME/.config/rofi"
 symlink "$DOTFILES/scripts"   "$HOME/.config/scripts"
 symlink "$DOTFILES/wallpaper" "$HOME/.config/wallpaper"
 symlink "$DOTFILES/waybar" "$HOME/.config/waybar"
+symlink "$DOTFILES/bashrc" "$HOME/.config/bashrc"
 symlink "$DOTFILES/bashrc/bashrc" "$HOME/.bashrc"
 
 # ── Make scripts executable ────────────────────────────────────────────────────
