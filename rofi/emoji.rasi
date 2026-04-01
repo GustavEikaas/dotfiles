@@ -1,0 +1,101 @@
+configuration {
+    columns:              9;
+    show-icons:           false;
+    hide-scrollbar:       true;
+    click-to-exit:        true;
+    font:                 "Noto Color Emoji 18";
+}
+
+* {
+    bg:          #1e1e2e;
+    bg-alt:      #2a2a3d;
+    fg:          #cdd6f4;
+    fg-dim:      #6c7086;
+    accent:      #89b4fa;
+    selected-bg: #313244;
+    border-col:  #45475a;
+
+    background-color:   transparent;
+    text-color:         @fg;
+}
+
+window {
+    background-color:   @bg;
+    border:             1px;
+    border-color:       @border-col;
+    border-radius:      14px;
+    width:              420px;
+    padding:            10px;
+}
+
+mainbox {
+    background-color:   transparent;
+    children:           [ inputbar, message, listview ];
+    spacing:            8px;
+}
+
+inputbar {
+    background-color:   @bg-alt;
+    border-radius:      8px;
+    padding:            6px 10px;
+    children:           [ prompt, entry ];
+    spacing:            6px;
+}
+
+prompt {
+    background-color:   transparent;
+    text-color:         @fg-dim;
+    vertical-align:     0.5;
+}
+
+entry {
+    background-color:   transparent;
+    text-color:         @fg;
+    placeholder-color:  @fg-dim;
+    placeholder:        "Search emoji...";
+    vertical-align:     0.5;
+}
+
+message {
+    background-color:   transparent;
+    padding:            0px 2px;
+}
+
+textbox {
+    background-color:   transparent;
+    text-color:         @fg-dim;
+    font:               "monospace 10";
+}
+
+listview {
+    background-color:   transparent;
+    columns:            9;
+    lines:              5;
+    fixed-columns:      true;
+    fixed-height:       false;
+    spacing:            2px;
+    flow:               horizontal;
+}
+
+element {
+    background-color:   transparent;
+    border-radius:      6px;
+    padding:            0px;
+    orientation:        vertical;
+    cursor:             pointer;
+    width:              36px;
+    height:             36px;
+}
+
+element selected {
+    background-color:   @selected-bg;
+    border:             1px;
+    border-color:       @accent;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         @fg;
+    horizontal-align:   0.5;
+    vertical-align:     0.5;
+}
