@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-29T10:10:17Z",
+  "generated": "2026-04-01T07:50:06Z",
   "packages": [
     {
       "name": "grim",
@@ -27,13 +27,68 @@
       "source": "pacman"
     },
     {
+      "name": "eza",
+      "version": "0.23.4-3",
+      "source": "pacman"
+    },
+    {
+      "name": "blueman",
+      "version": "2.4.6-2",
+      "source": "pacman"
+    },
+    {
       "name": "hyprpaper",
       "version": "0.8.3-3",
       "source": "pacman"
     },
     {
+      "name": "hyprlock",
+      "version": "0.9.2-8",
+      "source": "pacman"
+    },
+    {
       "name": "rofi-wayland",
       "version": "2.0.0-1",
+      "source": "pacman"
+    },
+    {
+      "name": "pavucontrol",
+      "version": "1:6.2-1",
+      "source": "pacman"
+    },
+    {
+      "name": "fprintd",
+      "version": "1.94.5-1",
+      "source": "pacman"
+    },
+    {
+      "name": "rofimoji",
+      "version": "6.7.0-2",
+      "source": "pacman"
+    },
+    {
+      "name": "wtype",
+      "version": "0.4-2",
+      "source": "pacman"
+    },
+    {
+      "name": "noto-fonts-emoji",
+      "version": "1:2.051-1",
+      "source": "pacman"
+    },
+    {
+      "name": "imagemagick",
+      "version": "7.1.2.16-1",
+      "source": "pacman"
+    },
+    {
+      "name": "tesseract",
+      "version": "5.5.2-1",
+      "source": "pacman"
+    },
+    {
+      "name": "tesseract-data-eng",
+      "version": "2:4.1.0-4",
       "source": "pacman"
     },
     {

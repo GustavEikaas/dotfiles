@@ -19,5 +19,8 @@ fprintd
 rofimoji
 wtype
 noto-fonts-emoji
+imagemagick
+tesseract
+tesseract-data-eng
 
 aur:hyprpicker
