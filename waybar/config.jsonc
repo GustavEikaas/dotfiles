@@ -14,7 +14,7 @@
 
   "modules-left": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
   "modules-center": ["custom/padd","custom/l_end","tray","clock","custom/r_end","custom/padd"],
-  "modules-right": ["custom/padd","custom/l_end","wlr/taskbar","network","custom/r_end","custom/padd"],
+  "modules-right": ["custom/padd","custom/l_end","wlr/taskbar","network", "pulseaudio","custom/r_end","custom/padd"],
 
 
   "custom/l_end": {

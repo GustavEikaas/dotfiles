@@ -14,7 +14,7 @@ blueman
 hyprpaper
 hyprlock
 rofi-wayland
-pavucontrol
+wiremix
 fprintd
 rofimoji
 wtype
