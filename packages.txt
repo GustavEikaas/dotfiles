@@ -16,5 +16,8 @@ hyprlock
 rofi-wayland
 pavucontrol
 fprintd
+rofimoji
+wtype
+noto-fonts-emoji
 
 aur:hyprpicker
