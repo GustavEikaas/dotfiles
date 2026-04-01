@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-01T07:50:06Z",
+  "generated": "2026-04-01T19:16:14Z",
   "packages": [
     {
       "name": "grim",
@@ -43,7 +43,7 @@
     },
     {
       "name": "hyprlock",
-      "version": "0.9.2-8",
+      "version": "0.9.3-1",
       "source": "pacman"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "name": "fprintd",
-      "version": "1.94.5-1",
+      "version": "1.94.5-2",
       "source": "pacman"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "name": "imagemagick",
-      "version": "7.1.2.16-1",
+      "version": "7.1.2.18-1",
       "source": "pacman"
     },
     {
