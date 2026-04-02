@@ -25,3 +25,6 @@ esac
 
 unset -f _bashrc_source_dir
 unset _bashrc_dir
+
+eval "$(starship init bash)"
+[[ $- == *i* ]] && source /usr/share/blesh/ble.sh

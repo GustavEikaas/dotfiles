@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-01T19:16:14Z",
+  "generated": "2026-04-02T07:49:34Z",
   "packages": [
     {
       "name": "grim",
@@ -52,8 +52,8 @@
       "source": "pacman"
     },
     {
-      "name": "pavucontrol",
-      "version": "1:6.2-1",
+      "name": "wiremix",
+      "version": "0.10.0-1",
       "source": "pacman"
     },
     {
@@ -92,8 +92,18 @@
       "source": "pacman"
     },
     {
+      "name": "starship",
+      "version": "1.24.2-2",
+      "source": "pacman"
+    },
+    {
       "name": "hyprpicker",
       "version": "0.4.6-2",
+      "source": "aur"
+    },
+    {
+      "name": "blesh",
+      "version": "0.3.4-5",
       "source": "aur"
     }
   ]

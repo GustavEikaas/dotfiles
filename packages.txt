@@ -22,5 +22,7 @@ noto-fonts-emoji
 imagemagick
 tesseract
 tesseract-data-eng
+starship
 
 aur:hyprpicker
+aur:blesh
