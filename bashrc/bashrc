@@ -1,19 +1,16 @@
-_bashrc_dir="$HOME/.config/bashrc"
+[[ $- == *i* ]] && source /usr/share/blesh/ble.sh --noattach
 
+_bashrc_dir="$HOME/.config/bashrc"
 _bashrc_source_dir() {
   local dir="$1"
   local file
-
   [[ -d "$dir" ]] || return 0
-
   for file in "$dir"/*.bash; do
     [[ -e "$file" ]] || continue
     . "$file"
   done
 }
-
 _bashrc_source_dir "$_bashrc_dir/env.d"
-
 case "$-" in
   *i*)
     _bashrc_source_dir "$_bashrc_dir/functions"
@@ -22,9 +19,22 @@ case "$-" in
     _bashrc_source_dir "$_bashrc_dir/readline.d"
     ;;
 esac
-
 unset -f _bashrc_source_dir
 unset _bashrc_dir
 
+[[ ${BLE_VERSION-} ]] && ble-attach
 eval "$(starship init bash)"
-[[ $- == *i* ]] && source /usr/share/blesh/ble.sh
+
+if [[ ${BLE_VERSION-} ]]; then
+  bleopt prompt_ps1_transient=same-dir
+
+  ble-face auto_complete=fg=238,bg=none
+  ble-face filename_ls_colors=none
+  ble-face filename_directory=none
+  ble-face filename_directory_sticky=none
+  ble-face syntax_command=none
+
+  ble-face menu_complete_selected=reverse
+  ble-face menu_filter_fixed=none
+  ble-face menu_filter_input=none
+fi

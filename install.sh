@@ -10,6 +10,7 @@ SYMLINKS=(
     "$DOTFILES/kitty:$HOME/.config/kitty"
     "$DOTFILES/rofi:$HOME/.config/rofi"
     "$DOTFILES/scripts:$HOME/.config/scripts"
+    "$DOTFILES/dunst:$HOME/.config/dunst"
     "$DOTFILES/wallpaper:$HOME/.config/wallpaper"
     "$DOTFILES/waybar:$HOME/.config/waybar"
     "$DOTFILES/bashrc:$HOME/.config/bashrc"
@@ -92,6 +93,7 @@ install() {
     bash "$DOTFILES/scripts/pkg.sh" install
 
     echo ""
+    sudo systemctl enable --now swayosd-libinput-backend.service
     echo "==> Done!"
 }
 
@@ -110,3 +112,5 @@ case "$COMMAND" in
     check)   check ;;
     *)       install ;;
 esac
+
+

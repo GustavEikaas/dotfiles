@@ -23,6 +23,8 @@ imagemagick
 tesseract
 tesseract-data-eng
 starship
+dunst
+libnotify
 
 aur:hyprpicker
-aur:blesh
+aur:blesh-git
