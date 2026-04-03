@@ -28,5 +28,6 @@ fi
 
 notify-send -u low \
   -h string:x-dunst-stack-tag:volume \
+  -h string:app_name:volume-control \
   -t 1500 \
   " " "$BODY"
