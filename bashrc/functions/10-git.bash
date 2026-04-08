@@ -139,3 +139,54 @@ ggac() {
 ggd() {
   git diff "$@"
 }
+
+gitstats() {
+  echo "What do you want to know?"
+  PS3="Enter a number (1-6): "
+  
+  options=(
+    "Top 20 most-changed files (last year)"
+    "Top contributors"
+    "Top 20 bug-prone files"
+    "Commit count by month"
+    "Firefighting commits (last year)"
+    "Quit"
+  )
+
+  select opt in "${options[@]}"; do
+    case $REPLY in
+      1)
+        echo -e "\n📊 Top 20 most-changed files in the last year:"
+        git log --format=format: --name-only --since="1 year ago" | sort | uniq -c | sort -nr | head -20
+        break
+        ;;
+      2)
+        echo -e "\n🏆 Top contributors (excluding merges):"
+        git shortlog -sn --no-merges
+        break
+        ;;
+      3)
+        echo -e "\n🐛 Top 20 files associated with bug fixes:"
+        git log -i -E --grep="fix|bug|broken" --name-only --format='' | sort | uniq -c | sort -nr | head -20
+        break
+        ;;
+      4)
+        echo -e "\n📅 Commit count by month:"
+        git log --format='%ad' --date=format:'%Y-%m' | sort | uniq -c
+        break
+        ;;
+      5)
+        echo -e "\n🔥 Firefighting commits in the last year:"
+        git log --oneline --since="1 year ago" | grep -iE 'revert|hotfix|emergency|rollback'
+        break
+        ;;
+      6)
+        echo "Exiting..."
+        break
+        ;;
+      *)
+        echo "Invalid option. Please enter a number between 1 and 6."
+        ;;
+    esac
+  done
+}
